@@ -3,11 +3,8 @@
     box-sizing: border-box;
     padding:0;
     margin:0;
+    font-family: 'Public Sans', sans-serif;
     
-}
-
-body{
-    background-color:white;
 }
 
 /*Header section*/
@@ -15,33 +12,24 @@ body{
 header{
     nav{
         display: flex;
+        height: 50px;
+        
         .nav-wrapper{
             width: 50%;
             height: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 14px 10px 0px 10px;
         }
         .nav-right{
             text-align: right;
         }
-        
     }
 }
 
 .card-header-wrapper{
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    
-    
-    img{
-        width: 100%;
-        position: absolute;
-    }
-
-    
-
+    text-align: center;
 }
-
 /*Header section*/
 
 
@@ -49,25 +37,67 @@ header{
     width: 100%;
     margin-left:auto;
     margin-right: auto;
-    border: 1px solid black;
-    background-color: white;
+    // border: 1px solid black;
+    background-color: #E9E9E9;
     text-align: center;
+
+    h1 {
+        color: #2D314D;
+        font-size: 40px;
+        margin: 0px 0px 40px;
+        font-weight: 300;
+        line-height: 1.3;
+        margin-bottom: .5em;
+    }
 }
 
 .card{
-    background-color: white;
+    // background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    // margin: 20px;
     color:gray;
 
+    h1 {
+        font-size: 40px;
+        margin: 0px 0px 40px;
+        font-weight: 300;
+        line-height: 1.3;
+        margin-bottom: .5em;
+    }
+    h2 {
+        font-size: 24px;
+        margin: 0px 0px 12px;
+        font-weight: 300;
+        line-height: 1.3;
+        margin-bottom: .5em;
+
+    }
+
+    h3 {
+        color: #9698A6;
+        font-size: 14.4px;
+        margin: 14.4px 0px;
+    }
+
+    h5 {
+        color: #9698A6;
+        font-size: 13.3333px;
+        margin: 13.3333px 0px;
+    }
+    p {
+        color: #9698A6;
+        font-size: 16px;
+        margin: 16px 0px 32px;
+    }
     .subcontainer{
-        background: purple;
+        background: #F4F4F4;
         width: 90%;
         height: 500px;
         text-align: left;
         border-radius: 10px;
+        margin: 10px;
         img{
             width: 100%;
             height: 50%;
@@ -82,12 +112,23 @@ header{
 
 
 
+button{
+    background-color:limegreen;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+    color: white;
+}
 
-
-footer{
+.footer1 {
     height: 300px;
-    background: red;
+    background-color: #2D314D;
     text-align: center;
+    font-size: 16px ;
+    margin: 0px 0px 32px;
+    color: white;
 }
 
 
@@ -96,13 +137,21 @@ footer{
 //Tablet Version
 @media only screen and ( min-width: 768px){
     body{
-        background-color: red;
+        // background-color: red;
     }
 }
 
 //Versión escritorio 
 @media only screen and ( min-width: 1024px ){
     body{
-        background-color: blue;
+        
     }
+
+    .card-wrapper{
+        display: flex;
+    }
+    header{
+        background-image: url(../images/bg-intro-desktop.svg);
+    }
+    
 }
