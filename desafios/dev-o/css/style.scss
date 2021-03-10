@@ -1,0 +1,57 @@
+$principal-color: #F0F0F0;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $principal-color;
+  }
+header{
+    nav{
+        background: red;
+        height: 50px;
+        width: 100%;
+    }
+}
+
+.main-post-card{
+    .post-img{
+        background-image: url(https://picsum.photos/id/237/200/300);
+    }
+}
+
+
+/*Clases de utilidad*/
+
+
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+.h-100{
+    height: 100%;
+}
+.h-50{
+    height: 50%;
+}
+.ai-center{
+    align-items: center;
+}
+
+.d-flex{
+    display: flex;
+}
+.jc-right{
+    justify-content: flex-end;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-spaceb{
+    justify-content: space-between;
+}
+
+.m-10{
+    margin: 10px;
+}
