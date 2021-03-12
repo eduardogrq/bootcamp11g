@@ -1,0 +1,24 @@
+.border-top-{
+    &cyan{
+        border-top: 5px solid cyan;
+    }
+    &red{
+        border-top: 5px solid red;
+    }
+    &orange{
+        border-top: 5px solid orange;
+    }
+    &navy{
+        border-top: 5px solid navy;
+    }
+}
+
+p{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: gray;
+}
+
+.box-shadow-gray{
+    box-shadow: 15px 15px 25px 5px rgba(0, 0, 0, 0.2)
+}
